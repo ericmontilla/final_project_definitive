@@ -68,20 +68,8 @@ real_estate_toolkit/
         ├── ml_models/
         │   ├── __init__.py
         │   └── predictor.py
-        └── main.py
-        │   ├── __init__.py
-        │   ├── consumers.py
-        │   ├── houses.py
-        │   ├── house_market.py
-        │   └── simulation.py
-        ├── analytics/
-        │   ├── __init__.py
-        │   ├── outputs/
-        │   │   ├── (output 1 name).html
-        │   │   ├── (output 2 name).html
-        │   │   └── (output ... name).html
-        │   └── exploratory.py
-        ├── ml_models/
-        │   ├── __init__.py
-        │   └── predictor.py
-        └── main.py
+        ├── main.py
+        └── main2.py
+
+
+       
