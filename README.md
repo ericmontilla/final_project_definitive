@@ -1,10 +1,14 @@
+# REAL STATE ANALYSIS TOOLKIT  PROJECT
+
+# Introduction:
+
 This project done by Eric Montilla, Jiaxin Ye, Kiki Xie He and Steven Abata is a housing market analysis toolkit that combines fundamental Python concepts with agent-based modelling and modern data analysis libraries. 
 The project is structured as a Python package named real_estate_toolkit.
 The project uses the Ames Housing dataset was taken from the Kaggle competition "House Prices - Advanced Regression Techniques" which challenges participants to predict residential housing prices based on a variety of featuresand covers a wealth of features that are critical for analyzing house prices, 
 with numerous categories capturing structure types, neighborhood characteristics,and utility details.The dataset includes information on 79 explanatory variables,
 which capture various aspects of residential homes, such as the number of rooms, square footage, neighborhood, and quality of materials used.
 
-DATA:
+# Data:
 
 data_description.txt - This file provides detailed explanations for each feature in the dataset, helping to understand and interpret the variables. Read it carefully.
 
@@ -27,12 +31,19 @@ Outdoor & Surroundings: Garage, porch, and fencing details.
 
 Price: The target metric.
 
-STRUCTURE:
+# Structure:
 
+## Real Estate Toolkit
+```plaintext
 real_estate_toolkit/
 ├── pyproject.toml
 ├── README.md
 ├── .venv/
+├── files
+|   ├── data_description.txt
+|   ├── sample_submission.csv
+|   ├── test.csv
+|   └── train.csv 
 └── src/
     └── real_estate_toolkit/
         ├── __init__.py
@@ -42,6 +53,22 @@ real_estate_toolkit/
         │   ├── cleaner.py
         │   └── descriptor.py
         ├── agent_based_model/
+        │   ├── __init__.py
+        │   ├── consumers.py
+        │   ├── houses.py
+        │   ├── house_market.py
+        │   └── simulation.py
+        ├── analytics/
+        │   ├── __init__.py
+        │   ├── outputs/
+        │   │   ├── (output 1 name).html
+        │   │   ├── (output 2 name).html
+        │   │   └── (output ... name).html
+        │   └── exploratory.py
+        ├── ml_models/
+        │   ├── __init__.py
+        │   └── predictor.py
+        └── main.py
         │   ├── __init__.py
         │   ├── consumers.py
         │   ├── houses.py
